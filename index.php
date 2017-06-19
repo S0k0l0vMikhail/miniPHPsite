@@ -22,6 +22,19 @@
        </div>
        </head>
      </header>
+
+     <div id="wrapper">
+       <div id="leftCol">f
+       </div>
+
+       <div id="rightCol">
+         <div class="banner"><img src="/img/banner_1.png" alt="Баннер 1" title="Баннер 1"></div>
+
+         <div class="banner"><img src="/img/banner_2.png" alt="Баннер 2" title="Баннер 2"></div>
+       </div>
+
+     </div>
+
      <footer>
        <div id="social">
          <a href="https://vk.com" title="Группа Вк" target="_blank"><img src="/img/vk.png" alt="Вк" title="Вк"></a>
