@@ -4,6 +4,7 @@
   padding: 0;
   outline: none;
 }
+
 html {height: 100%;}
 
 body {
@@ -25,14 +26,14 @@ img {
 
 a {
   color: #d38484
-  text-decoration none; /* РЅРµ РїРѕРґСЃРІРµС‡РёРІР°С‚СЊ РѕР±Р»РѕСЃС‚Рё РІРІРѕРґР°*/
+  text-decoration none; /* не подсвечивать облости ввода*/
 }
 
 a:hover {
   color: #efdea0;
 }
 
-/* РјРµРґР»РµРЅРЅР°СЏ СЃРјРµРЅР° С†РІРµС‚Р° СЃСЃС‹Р»РѕРє РґР»СЏ РІСЃРµС… Р±СЂР°СѓР·РµСЂРѕРІ*/
+/* медленная смена цвета ссылок для всех браузеров*/
 a, a:hover {
   -webkit-transition: all.6s ease;
   -moz-transition: all.6s ease;
@@ -45,7 +46,7 @@ a, a:hover {
   clear: both;
 }
 
-/*РЎС‚РёР»Рё РґР»СЏ С€Р°РїРєРё*/
+/*Стили для шапки*/
 
 header {
  width: 98%;
@@ -95,14 +96,14 @@ header #regAuth {
   font-size: 1.2em;
 }
 
-/*РЎС‚РёР»Рё РґР»СЏ РІСЃРµРіРѕ РґРѕРєСѓРјРµРЅС‚Р° */
+/*Стили для всего документа */
 #wrapper {
   width: 80%;
   margin-left: 10%;
   float: left;
 }
 
-/*РЎС‚РёР»Рё РґР»СЏ Р»РµРІРѕР№ РєРѕР»РѕРЅРё*/
+/*Стили для левой колони*/
 
 #wrapper #leftCol {
   width: 70%;
@@ -160,7 +161,66 @@ header #regAuth {
   width: 20%;
 }
 
-/*РЎС‚РёР»Рё РґР»СЏ РїСЂР°РІРѕР№ РєРѕР»РѕРЅРё*/
+/*Стили для страницы обратной связи*/
+
+#wrapper #leftCol input {
+  width: 40%;
+  margin-left: 30%;
+  float: left;
+  border-radius: 5px;
+  border: 2px solid silver;
+  padding: 5px;
+  color: blue;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+#wrapper #leftCol input:focus{
+  border: 2px solid #f78080;
+}
+
+#wrapper #leftCol input#done:hover {
+  border: 2px solid #f8d881;
+  cursor: pointer;
+}
+
+#wrapper #leftCol textarea {
+  width: 50%;
+  height: 150px;
+  margin-left: 25%;
+  float: left;
+  border-radius: 5px;
+  border: 2px solid silver;
+  padding: 5px;
+  color: blue;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  resize: none;
+}
+
+#wrapper #leftCol textarea:focus {
+  border: 2px solid #f78080;
+}
+
+#wrapper #leftCol #messageShow {
+  font-size: 1.2em;
+  float: left;
+  color: red;
+  width: 100%;
+  text-align: center;
+}
+
+/*Стили для страницы о нас*/
+
+#wrapper #leftCol #about_us {
+  width: 76%;
+  margin-left: 10%;
+  border: 1px solid silver;
+  background-color: #f4f4f4;
+  padding: 2%;
+}
+
+/*Стили для правой колони*/
 
 #wrapper #rightCol {
   width: 20%;
@@ -175,7 +235,7 @@ header #regAuth {
   box-sizing: border-box;
 }
 
-/*СЃС‚РёР»Рё РґР»СЏ С„СѓС‚РµСЂР°*/
+/*стили для футера*/
 footer {
   width: 98%;
   float: left;
