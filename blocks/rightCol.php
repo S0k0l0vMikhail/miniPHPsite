@@ -1,5 +1,5 @@
 <div id="rightCol">
-  <div class="banner"><img src="/img/banner_1.png" alt="Áàííåð 1" title="Áàííåð 1"></div>
+  <div class="banner"><img src="/img/banner_1.png" alt="Ð‘Ð°Ð½Ð½ÐµÑ€ 1" title="Ð‘Ð°Ð½Ð½ÐµÑ€ 1"></div>
 
-  <div class="banner"><img src="/img/banner_2.png" alt="Áàííåð 2" title="Áàííåð 2"></div>
+  <div class="banner"><img src="/img/banner_2.png" alt="Ð‘Ð°Ð½Ð½ÐµÑ€ 2" title="Ð‘Ð°Ð½Ð½ÐµÑ€ 2"></div>
 </div>

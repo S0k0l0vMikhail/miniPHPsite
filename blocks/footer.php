@@ -1,9 +1,9 @@
 <footer>
   <div id="social">
-    <a href="https://vk.com" title="Группа Вк" target="_blank"><img src="/img/vk.png" alt="Вк" title="Вк"></a>
-    <a href="https://facebook.com" title="Группа Facebook" target="_blank"><img src="/img/fb.png" alt="FB" title="Facebook"></a>
+    <a href="https://vk.com" title="Р“СЂСѓРїРїР° Р’Рє" target="_blank"><img src="/img/vk.png" alt="Р’Рє" title="Р’Рє"></a>
+    <a href="https://facebook.com" title="Р“СЂСѓРїРїР° Facebook" target="_blank"><img src="/img/fb.png" alt="FB" title="Facebook"></a>
   </div>
   <div id="rights">
-    Все права защищены &copy; <?=date('Y')?>
+    Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹ &copy; <?=date('Y')?>
   </div>
 </footer>

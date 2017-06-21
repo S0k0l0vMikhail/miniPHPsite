@@ -1,15 +1,15 @@
 <header>
   <div id="logo">
-    <a href="/" title="Перейти на главную"><span>Н</span>овости</a>
+    <a href="/" title="РџРµСЂРµР№С‚Рё РЅР° РіР»Р°РІРЅСѓСЋ"><span>Рќ</span>РѕРІРѕСЃС‚Рё</a>
   </div>
   <div id="menuHead">
      <a href="/about.php">
-       <div style="margin-right: 5%">О нас</div></a>
+       <div style="margin-right: 5%">Рћ РЅР°СЃ</div></a>
      <a href="/feedback.php">
-       <div>Обратная связь</div></a>
+       <div>РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ</div></a>
   </div>
   <div id="regAuth">
-     <A href="/reg.php">Регистрация<a/> <a href="/auth.php">Авторизаця</a>
+     <A href="/reg.php">Р РµРіРёСЃС‚СЂР°С†РёСЏ<a/> <a href="/auth.php">РђРІС‚РѕСЂРёР·Р°С†СЏ</a>
   </div>
   </head>
 </header>

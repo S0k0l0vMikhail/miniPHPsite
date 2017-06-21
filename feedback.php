@@ -2,7 +2,7 @@
 <html>
 <head>
   <?php
-  $title = "Íîâîñòè";
+  $title = "ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸";
    require_once "blocks/head.php";
   ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,13 +16,13 @@
       var message = $("#message").val ();
       var fail = "";
       if (name.length < 3)
-        fail = "Èìÿ íå ìåíüøå 3 ñèìâîëîâ";
+        fail = "Ð˜Ð¼Ñ Ð½Ðµ Ð¼ÐµÐ½ÑŒÑˆÐµ 3 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²";
       else if (email.split ('@').length - 1 == 0 || email.split ('.').length - 1 == 0 )
-        fail = "Âû ââåëè íåêîððåêòíûé email";
+        fail = "Ð’Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ email";
       else if (subject.length < 5)
-        fail = "Òåìà ñîîáùåíèé ìåíåå 5 ñèìâîëîâ";
+        fail = "Ð¢ÐµÐ¼Ð° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ Ð¼ÐµÐ½ÐµÐµ 5 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²";
       else if (message.length < 20)
-        fail = "Ñîîáùåíèå ìåíåå 20 ñèìâîëîâ";
+        fail = "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¼ÐµÐ½ÐµÐµ 20 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²";
       if (fail != ""){
       $('#messageShow').html (fail + "<div class='clear'></br></div>");
       $('#messageShow').show ();
@@ -47,12 +47,12 @@
   <?php require_once "blocks/header.php" ?>
      <div id="wrapper">
        <div id="leftCol">
-         <input type="text" placeholder="Èìÿ" id="name"  name="name"></br>
+         <input type="text" placeholder="Ð˜Ð¼Ñ" id="name"  name="name"></br>
          <input type="text" placeholder="Email" id="email"  name="email"></br>
-         <input type="text" placeholder="Òåìà ñîîáùåíèÿ" id="subject"  name="subject"></br>
+         <input type="text" placeholder="Ð¢ÐµÐ¼Ð° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ" id="subject"  name="subject"></br>
          <textarea name="message" id="message"></textarea></br>
          <div id="messageShow"></div>
-         <input type="button" name="done" id="done" value="Îòïðàâèòü">
+         <input type="button" name="done" id="done" value="ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ">
        </div>
        <?php require_once "blocks/rightCol.php" ?>
      </div>

@@ -2,8 +2,9 @@
 <html>
 <head>
   <?php
-  $title = "Новости";
+   $title = "РќРѕРІРѕСЃС‚Рё";
    require_once "blocks/head.php";
+   $news = getNews (3);
   ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -11,28 +12,50 @@
   <?php require_once "blocks/header.php" ?>
      <div id="wrapper">
        <div id="leftCol">
+         <?php
+            for ($i = 0; $i < count($news); $i++){
+              if($i == 0)
+                echo "<div id=\"bigArticle\">";
+              else
+                echo "<div class=\"article\">";
+              echo '<img src="/img/article/'.$news[$i]["id"].'.jpg" alt="РЎС‚Р°С‚СЊСЏ '.$news[$i]["id"].'" title="РЎС‚Р°С‚СЊСЏ '.$news[$i]["id"].'">
+              <h2>РЎС‚Р°С‚СЊСЏ '.$news[$i]["title"].'</h2>
+                <p>РўРµРєСЃС‚ '.$news[$i]["intro_text"].'</p>
+                <a href="/article.php">
+                 <div class="more">Р”Р°Р»РµРµ</div>
+                 </a>
+            </div>';
+            if ($i == 0)
+              echo "<div class=\"clear\"><br></div>";
+            }
+            ?>
+<!--
          <div id="bigArticle">
-           <img src="/img/article_1.jpg" alt="Статья 1" title="Статья 1">
-           <h2>Статья 1</h2>
-             <p>Текст 1</p>
-             <a href="/article.php"></a>
-              <div class="more">Далее</div>
+           <img src="/img/article_1.jpg" alt="РЎС‚Р°С‚СЊСЏ 1" title="РЎС‚Р°С‚СЊСЏ 1">
+           <h2>РЎС‚Р°С‚СЊСЏ 1</h2>
+             <p>РўРµРєСЃС‚ 1</p>
+             <a href="/article.php">
+              <div class="more">Р”Р°Р»РµРµ</div>
+              </a>
          </div>
          <div class="clear"></br></div>
          <div class="article">
-           <img src="/img/article_2.jpg" alt="Статья 2" title="Статья 2">
-           <h2>Статья 2</h2>
-             <p>Текст 2</p>
-             <a href="/article.php"></a>
-              <div class="more">Далее</div>
+           <img src="/img/article_2.jpg" alt="РЎС‚Р°С‚СЊСЏ 2" title="РЎС‚Р°С‚СЊСЏ 2">
+           <h2>РЎС‚Р°С‚СЊСЏ 2</h2>
+             <p>РўРµРєСЃС‚ 2</p>
+             <a href="/article.php">
+              <div class="more">Р”Р°Р»РµРµ</div>
+              </a>
          </div>
          <div class="article">
-           <img src="/img/article_3.jpg" alt="Статья 3" title="Статья 3">
-           <h2>Статья 3</h2>
-             <p>Текст 3</p>
-             <a href="/article.php"></a>
-              <div class="more">Далее</div>
+           <img src="/img/article_3.jpg" alt="РЎС‚Р°С‚СЊСЏ 3" title="РЎС‚Р°С‚СЊСЏ 3">
+           <h2>РЎС‚Р°С‚СЊСЏ 3</h2>
+             <p>РўРµРєСЃС‚ 3</p>
+             <a href="/article.php">
+              <div class="more">Р”Р°Р»РµРµ</div>
+              </a>
          </div>
+-->
        </div>
        <?php require_once "blocks/rightCol.php" ?>
      </div>
