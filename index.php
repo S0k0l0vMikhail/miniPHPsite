@@ -2,9 +2,10 @@
 <html>
 <head>
   <?php
+   require_once "/functions/functions.php";
    $title = "Новости";
    require_once "blocks/head.php";
-   $news = getNews (3);
+   $news = getNews (3, $id);
   ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -21,7 +22,7 @@
               echo '<img src="/img/article/'.$news[$i]["id"].'.jpg" alt="Статья '.$news[$i]["id"].'" title="Статья '.$news[$i]["id"].'">
               <h2>Статья '.$news[$i]["title"].'</h2>
                 <p>Текст '.$news[$i]["intro_text"].'</p>
-                <a href="/article.php">
+                <a href="/article.php?id='.$news[$i]["id"].'">
                  <div class="more">Далее</div>
                  </a>
             </div>';

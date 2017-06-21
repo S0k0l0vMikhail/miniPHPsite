@@ -13,13 +13,19 @@
   }
 
 
-  function getNews ($limit) {
+  function getNews ($limit, $id) {
     global $mysqli;
     connectDB ();
-    $result = $mysqli -> query ("SELECT * FROM news ORDER BY id DESC LIMIT $limit");
+    if ($id)
+      $where = "WHERE `id` = ".$id;
+    $result = $mysqli -> query ("SELECT * FROM news $where ORDER BY id DESC LIMIT $limit");
     closeDB ();
-    return resultToArray ($result);
+    if (!$id)
+      return resultToArray ($result);
+    else
+      return $result->fetch_assoc();
   }
+
   function resultToArray($result) {
       $array = array ();
       while (($row = $result -> fetch_assoc()) != false)
